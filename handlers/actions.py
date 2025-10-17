@@ -14,7 +14,7 @@ def handle_action(bot, message):
                 bot.send_photo(message.chat.id, photo, caption=" Погладить кота")
     elif 'Обнять' in text:
         history.append('Обнять кота')
-        photo_path = os.path.join('media', 'cat.jpg')
+        photo_path = os.path.join('media', 'cat_3.jpg')
         if os.path.exists(photo_path):
             with open(photo_path, 'rb') as photo:
                 bot.send_photo(message.chat.id, photo, caption=" Обнять кота")
